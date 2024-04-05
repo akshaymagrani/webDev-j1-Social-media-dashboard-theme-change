@@ -1,0 +1,262 @@
+/* Primary */
+$Up: hsl(163, 72%, 41%);
+$Down: hsl(356, 69%, 56%);
+$Facebook: hsl(195, 100%, 50%);
+$Twitter: hsl(203, 89%, 53%);
+$Instagram: linear-gradient(to left, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+$YouTube: hsl(348, 97%, 39%);
+
+/* Dark Theme */
+$Toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+
+/* Light Theme */
+$Toggle: hsl(230, 22%, 74%);
+
+/* Neutral */
+
+/* Dark Theme */
+$Body-D-BG: hsl(230, 17%, 14%);
+$Overview-Card-D-Top-BG-Pattern: hsl(232, 19%, 15%);
+$Card-D-BG: hsl(228, 28%, 20%);
+$Overview-Card-D-Text: hsl(228, 34%, 66%);
+
+/* Light Theme */
+$White: hsl(0, 0%, 100%);
+$Body-L-BG: $White;
+$Top-L-BG-Pattern: hsl(225, 100%, 98%);
+$Card-L-BG: hsl(227, 47%, 96%);
+$Overview-Card-L-Light-Text: hsl(228, 12%, 44%);
+$Overview-Card-L-Darker-Text: hsl(230, 17%, 14%);
+
+
+$font: 'Inter', sans-serif;
+
+.border-top-fb{
+    border-top: 5px solid $Facebook;
+}
+.border-top-tw {
+    border-top: 5px solid $Twitter;
+}
+.border-top-in {
+    position: absolute;
+    background: linear-gradient(to left, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    height: 5px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.border-top-yt {
+    border-top: 5px solid $YouTube;
+}
+
+@mixin theme-light(){
+    background-color: $Card-L-BG;
+}
+
+$theme: light;
+p{
+    margin: 0;
+}
+
+@mixin card{
+    padding: 1em;
+    margin: 1em;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 275px;
+    min-width: 275px;
+    position: relative;
+    cursor: pointer;
+}
+
+body{
+    font-family: $font;
+    margin: 0;
+    padding: 0;
+    color: $Overview-Card-L-Light-Text;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 756px;
+    margin: auto;
+}
+.flex-column{
+    flex-direction: column;
+}
+
+.card{
+    background-color: $Card-L-BG;
+    flex: 1;
+    @include card;
+}
+.card:hover{
+    background-color: $Toggle;
+}
+
+.section1{
+    position: relative;
+    .sec1-head{
+        margin: 1em;
+        max-width: 300px;
+    }
+    h1{
+        margin: 0;
+        color: black;
+    }
+}
+.header-bg{
+    background-color: $Top-L-BG-Pattern;
+    height: 25vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $Overview-Card-L-Light-Text;
+    font-weight: bold;
+    span{
+        padding-left: 0.5em;
+    }
+}
+
+
+.up {
+    color: $Up;
+}
+
+.down {
+    color: $Down;
+}
+
+.up, .down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.column-1{
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-right: auto;
+}
+.column-2{
+    justify-content: space-between;
+    align-items: end;
+}
+
+.social-media{
+    .card{
+        .followers{
+            font-size: small;
+            padding: 1em 0;
+            letter-spacing: 2px;
+            font-weight: lighter;
+            
+        }
+        strong {
+            font-weight: 700;
+            font-size: 3em;
+            color: black;
+        }
+    }
+}
+
+.overview{
+    .card{
+        display: flex;
+        min-height: 4.5em;
+    }
+    strong {
+        font-weight: 700;
+        font-size: 2em;
+        color: black;
+    }
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 17px;
+    cursor: pointer;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(13px);
+}
+
+@media (min-width: 375px) {
+    .section1 {
+        .sec1-head {
+            margin: 1em;
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .invisible{
+            display: none;
+        }
+    }
+    .card{
+        clamp: 275px, 1fr, 300px;
+    }
+}
+
+// @if (#theme-changer and $theme ==light) {
+//     $theme: dark;
+// }
+// else {
+//     $theme: light;
+// }
