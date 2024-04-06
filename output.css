@@ -38,16 +38,17 @@ body {
   padding: 0;
   color: hsl(228, 12%, 44%);
 }
-body body {
-  background-color: pink;
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 756px;
-  margin: auto;
 }
 
 .flex-column {
@@ -56,24 +57,21 @@ body body {
 
 .card {
   background-color: hsl(227, 47%, 96%);
-  flex: 1;
   padding: 1em;
   margin: 1em;
   border-radius: 5px;
   text-align: center;
   max-width: 275px;
-  min-width: 165px;
+  min-width: 275px;
   position: relative;
   cursor: pointer;
+  display: flex;
 }
 
 .card:hover {
   background-color: hsl(230, 22%, 74%);
 }
 
-.section1 {
-  position: relative;
-}
 .section1 .sec1-head {
   margin: auto;
   max-width: 300px;
@@ -82,6 +80,7 @@ body body {
 .section1 h1 {
   margin: 0;
   color: black;
+  font-size: 2em;
 }
 
 .header-bg {
@@ -145,6 +144,9 @@ body body {
   text-align: center;
 }
 
+.social-media .card {
+  flex-direction: column;
+}
 .social-media .card .followers {
   font-size: small;
   padding-bottom: 1em;
@@ -157,8 +159,13 @@ body body {
   color: black;
 }
 
+.overview {
+  flex-direction: column;
+}
+.overview .sec2-subhead {
+  margin: 1em 1em 0;
+}
 .overview .card {
-  display: flex;
   min-height: 4.5em;
 }
 .overview strong {
@@ -226,9 +233,6 @@ input:checked + .slider:before {
   transform: translateX(-16px);
   background-color: white;
 }
-input:checked + .slider:before body {
-  background-color: hsl(230, 17%, 14%);
-}
 
 /* Rounded sliders */
 .slider.round {
@@ -239,9 +243,9 @@ input:checked + .slider:before body {
   border-radius: 50%;
 }
 
-@media (min-width: 455px) {
-  .section1 {
-    margin: auto;
+@media (min-width: 510px) {
+  .container {
+    justify-content: start;
   }
   .section1 .sec1-head {
     margin: 1em;
@@ -258,11 +262,13 @@ input:checked + .slider:before body {
   }
   .card {
     max-width: 275px;
+    min-width: 190px;
   }
 }
 @media (min-width: 726px) {
   .container {
-    max-width: 926px;
+    max-width: 1022px;
+    justify-content: center;
   }
 }
 

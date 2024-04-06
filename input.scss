@@ -30,20 +30,6 @@ $Overview-Card-L-Darker-Text: hsl(230, 17%, 14%);
 
 $font: 'Inter', sans-serif;
 
-@mixin body-theme($theme) {
-    @if $theme =="light" {
-        body {
-            background-color: pink;
-        }
-    }
-    @else {
-        body {
-            background-color: $Body-D-BG;
-        }
-    }
-}
-
-
 .border-top-fb{
     border-top: 5px solid $Facebook;
 }
@@ -65,10 +51,6 @@ $font: 'Inter', sans-serif;
     border-top: 5px solid $YouTube;
 }
 
-@mixin theme-light(){
-    background-color: $Card-L-BG;
-}
-
 $theme: light;
 p{
     margin: 0;
@@ -80,9 +62,10 @@ p{
     border-radius: 5px;
     text-align: center;
     max-width: 275px;
-    min-width: 165px;
+    min-width: 275px;
     position: relative;
     cursor: pointer;
+    display: flex;
 }
 
 body{
@@ -90,14 +73,16 @@ body{
     margin: 0;
     padding: 0;
     color: $Overview-Card-L-Light-Text;
-    @include body-theme($theme: "light");
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 756px;
-    margin: auto;
 }
 .flex-column{
     flex-direction: column;
@@ -105,7 +90,6 @@ body{
 
 .card{
     background-color: $Card-L-BG;
-    flex: 1;
     @include card;
 }
 .card:hover{
@@ -113,7 +97,6 @@ body{
 }
 
 .section1{
-    position: relative;
     .sec1-head{
         margin: auto;
         max-width: 300px;
@@ -122,6 +105,7 @@ body{
     h1{
         margin: 0;
         color: black;
+        font-size: 2em;
     }
 }
 .header-bg{
@@ -183,6 +167,7 @@ body{
 }
 .social-media{
     .card{
+        flex-direction: column;
         .followers{
             font-size: small;
             padding-bottom: 1em;
@@ -198,8 +183,11 @@ body{
 }
 
 .overview{
+    flex-direction: column;
+    .sec2-subhead{
+        margin: 1em 1em 0;
+    }
     .card{
-        display: flex;
         min-height: 4.5em;
     }
     strong {
@@ -265,7 +253,6 @@ input:checked+.slider:before {
     -ms-transform: translateX(-16px);
     transform: translateX(-16px);
     background-color: white;
-    @include body-theme($theme == "light");
 }
 
  /* Rounded sliders */
@@ -277,9 +264,11 @@ input:checked+.slider:before {
     border-radius: 50%;
 }
 
-@media (min-width: 455px) {
+@media (min-width: 510px) {
+    .container{
+        justify-content: start;
+    }
     .section1 {
-        margin: auto;
         .sec1-head {
             margin: 1em;
             max-width: 100%;
@@ -297,17 +286,12 @@ input:checked+.slider:before {
     }
     .card{
         max-width: 275px;
+        min-width: 190px;
     }
 }
 @media (min-width: 726px) {
     .container{
-        max-width: 926px;
+        max-width: 1022px;
+        justify-content: center;
     }
 }
-
-// @if (#theme-changer and $theme ==light) {
-//     $theme: dark;
-// }
-// else {
-//     $theme: light;
-// }

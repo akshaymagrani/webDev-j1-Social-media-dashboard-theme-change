@@ -27,7 +27,7 @@
           <label class="label">
             <p class="theme">Dark Mode</p>
             <div class="switch">
-              <input type="checkbox">
+              <input type="checkbox" id="theme-changer" onclick="themeSwitchDark()">
               <span class="slider round"></span>
             </div>
           </label>
@@ -63,91 +63,93 @@
     </section>
 
     <!-- Section 1-->
-    <section class="section2 overview container">
-      <div class="sec2-head">
-        <h2 class="sec2-subhead">Overview - Today</h2>
-      </div>
-      <section class="container">
-      <div class="sec2-div1 card" id="sec2-div0">
-        <div class="column column-1">
-          <p class="top-left">Page Views</p>
-          <p class="bottom-left"><strong>87</strong></p>
+    <section class="section2">
+      <section class="overview container">
+        <div class="sec2-head">
+          <h2 class="sec2-subhead">Overview - Today</h2>
         </div>
-        <div class="column column-2">
-          <img src="images/icon-facebook.svg" alt="facebook-icon" class="facebook-icon top-right">
-          <p class="bottom-right1 up"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow"><span>3%</span></p>
+        <section class="container">
+        <div class="sec2-div1 card" id="sec2-div0">
+          <div class="column column-1">
+            <p class="top-left">Page Views</p>
+            <p class="bottom-left"><strong>87</strong></p>
+          </div>
+          <div class="column column-2">
+            <img src="images/icon-facebook.svg" alt="facebook-icon" class="facebook-icon top-right">
+            <p class="bottom-right1 up"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow"><span>3%</span></p>
+          </div>
         </div>
-      </div>
-      <div class="sec2-div2 card" id="sec2-div1">
-        <div class="column column-1">
-          <p class="top-left">Likes</p>
-          <p class="bottom-left"><strong>52</strong></p>
+        <div class="sec2-div2 card" id="sec2-div1">
+          <div class="column column-1">
+            <p class="top-left">Likes</p>
+            <p class="bottom-left"><strong>52</strong></p>
+          </div>
+          <div class="column column-2">
+            <img src="images/icon-facebook.svg" alt="facebook-icon" class="facebook-icon top-right">
+            <p class="bottom-right2 down"><img src="images/icon-down.svg" alt="down-arrow" class="down-arrow"><span>2%</span></p>
+          </div>
         </div>
-        <div class="column column-2">
-          <img src="images/icon-facebook.svg" alt="facebook-icon" class="facebook-icon top-right">
-          <p class="bottom-right2 down"><img src="images/icon-down.svg" alt="down-arrow" class="down-arrow"><span>2%</span></p>
+        <div class="sec2-div3 card" id="sec2-div2">
+          <div class="column column-1">
+            <p class="top-left">Likes</p>
+            <p class="bottom-left"><strong>5462</strong></p>
+          </div>
+          <div class="column column-2">
+            <img src="images/icon-instagram.svg" alt="insta-icon" class="insta-icon top-right">
+            <p class="bottom-right3 up"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow"><span>2257%</span></p>
+          </div>
         </div>
-      </div>
-      <div class="sec2-div3 card" id="sec2-div2">
-        <div class="column column-1">
-          <p class="top-left">Likes</p>
-          <p class="bottom-left"><strong>5462</strong></p>
+        <div class="sec2-div4 card" id="sec2-div3">
+          <div class="column column-1">
+            <p class="top-left">Profile Views</p>
+            <p class="bottom-left"><strong>52k</strong></p>
+          </div>
+          <div class="column column-2">
+            <img src="images/icon-instagram.svg" alt="insta-icon" class="insta-icon top-right">
+            <p class="bottom-right4 up"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow"><span>1375%</span></p>
+          </div>
         </div>
-        <div class="column column-2">
-          <img src="images/icon-instagram.svg" alt="insta-icon" class="insta-icon top-right">
-          <p class="bottom-right3 up"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow"><span>2257%</span></p>
+        <div class="sec2-div5 card" id="sec2-div4">
+          <div class="column column-1">
+            <p class="top-left">Retweets</p>
+            <p class="bottom-left"><strong>117</strong></p>
+          </div>
+          <div class="column column-2">
+            <img src="images/icon-twitter.svg" alt="twitter-icon" class="twitter-icon top-right">
+            <p class="bottom-right5 up"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow"><span>303%</span></p>
+          </div>
         </div>
-      </div>
-      <div class="sec2-div4 card" id="sec2-div3">
-        <div class="column column-1">
-          <p class="top-left">Profile Views</p>
-          <p class="bottom-left"><strong>52k</strong></p>
+        <div class="sec2-div6 card" id="sec2-div5">
+          <div class="column column-1">
+            <p class="top-left">Likes</p>
+            <p class="bottom-left"><strong>507</strong></p>
+          </div>
+          <div class="column column-2">
+            <img src="images/icon-twitter.svg" alt="twitter-icon" class="twitter-icon top-right">
+            <p class="bottom-right6 up"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow"><span>553%</span></p>
+          </div>
         </div>
-        <div class="column column-2">
-          <img src="images/icon-instagram.svg" alt="insta-icon" class="insta-icon top-right">
-          <p class="bottom-right4 up"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow"><span>1375%</span></p>
+        <div class="sec2-div7 card" id="sec2-div6">
+          <div class="column column-1">
+            <p class="top-left">Likes</p>
+            <p class="bottom-left"><strong>107</strong></p>
+          </div>
+          <div class="column column-2">
+            <img src="images/icon-youtube.svg" alt="youtube-icon" class="youtube-icon top-right">
+            <p class="bottom-right7 down"><img src="images/icon-down.svg" alt="down-arrow" class="down-arrow"><span>19%</span></p>
+          </div>
         </div>
-      </div>
-      <div class="sec2-div5 card" id="sec2-div4">
-        <div class="column column-1">
-          <p class="top-left">Retweets</p>
-          <p class="bottom-left"><strong>117</strong></p>
+        <div class="sec2-div8 card" id="sec2-div7">
+          <div class="column column-1">
+            <p class="top-left">Total Views</p>
+            <p class="bottom-left"><strong>1407</strong></p>
+          </div>
+          <div class="column column-2">
+            <img src="images/icon-youtube.svg" alt="youtube-icon" class="youtube-icon top-right">
+            <p class="bottom-right8 down"><img src="images/icon-down.svg" alt="down-arrow" class="down-arrow"><span>12%</span></p>
+          </div>
         </div>
-        <div class="column column-2">
-          <img src="images/icon-twitter.svg" alt="twitter-icon" class="twitter-icon top-right">
-          <p class="bottom-right5 up"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow"><span>303%</span></p>
-        </div>
-      </div>
-      <div class="sec2-div6 card" id="sec2-div5">
-        <div class="column column-1">
-          <p class="top-left">Likes</p>
-          <p class="bottom-left"><strong>507</strong></p>
-        </div>
-        <div class="column column-2">
-          <img src="images/icon-twitter.svg" alt="twitter-icon" class="twitter-icon top-right">
-          <p class="bottom-right6 up"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow"><span>553%</span></p>
-        </div>
-      </div>
-      <div class="sec2-div7 card" id="sec2-div6">
-        <div class="column column-1">
-          <p class="top-left">Likes</p>
-          <p class="bottom-left"><strong>107</strong></p>
-        </div>
-        <div class="column column-2">
-          <img src="images/icon-youtube.svg" alt="youtube-icon" class="youtube-icon top-right">
-          <p class="bottom-right7 down"><img src="images/icon-down.svg" alt="down-arrow" class="down-arrow"><span>19%</span></p>
-        </div>
-      </div>
-      <div class="sec2-div8 card" id="sec2-div7">
-        <div class="column column-1">
-          <p class="top-left">Total Views</p>
-          <p class="bottom-left"><strong>1407</strong></p>
-        </div>
-        <div class="column column-2">
-          <img src="images/icon-youtube.svg" alt="youtube-icon" class="youtube-icon top-right">
-          <p class="bottom-right8 down"><img src="images/icon-down.svg" alt="down-arrow" class="down-arrow"><span>12%</span></p>
-        </div>
-      </div>
+        </section>
       </section>
     </section>
     <div class="attribution">
@@ -158,45 +160,53 @@
 </body>
 <script>
   function themeSwitchDark() {
-    var darkBody = document.getElementById("body");
-    var darkMain = document.getElementById("main");
-    var switchedDark = document.getElementById("theme-changer");
-    var followersNumbers = document.getElementsByClassName("followers-numbers");
-    var boottomLeft = document.getElementsByClassName("bottom-left");
-    var heading = document.getElementsByClassName("heading");
-    var sec2Sub = document.getElementsByClassName("sec2-subhead");
-    if (switchedDark.checked === true) {
-      darkBody.style.backgroundColor = "hsl(230, 17%, 14%)";
-      darkMain.style.backgroundColor = "hsl(230, 17%, 14%)";
-      switchedDark.style.backgroundColor = "linear-gradient(90deg, hsl(210, 78%, 56%) , hsl(146, 68%, 55%))";
+    const body = document.getElementById("body");
+    const main = document.getElementById("main");
+    const switchedToDark = document.getElementById("theme-changer");
+    const followersNumbers = document.getElementsByClassName("followers-numbers");
+    const strongElements = document.getElementsByTagName("strong");
+    const heading = document.getElementsByClassName("heading");
+    const sec2Sub = document.getElementsByClassName("sec2-subhead");
+    const headerBg = document.getElementsByClassName("header-bg");
+  
+    if (switchedToDark.checked === true) {
+      body.style.backgroundColor = "hsl(230, 17%, 14%)";
+      main.style.backgroundColor = "hsl(230, 17%, 14%)";
       heading[0].style.color = "white";
       sec2Sub[0].style.color = "white";
-      for ( let i=0;i<4;i++) {
-        var secBack = document.getElementById("sec1-div"+i);
+      headerBg[0].style.backgroundColor = "hsl(232, 19%, 15%)";
+      for (let i = 0; i < 4; i++) {
+        const secBack = document.getElementById("sec1-div"+i);
         secBack.style.backgroundColor = "hsl(228, 28%, 20%)"; 
         followersNumbers[i].style.color = "white";
       }
-      for ( let i=0;i<8;i++) {
-        var secBack = document.getElementById("sec2-div"+i);
+      for (let i = 0; i < 8; i++) {
+        const secBack = document.getElementById("sec2-div"+i);
         secBack.style.backgroundColor = "hsl(228, 28%, 20%)"; 
-        boottomLeft[i].style.color = "white";
+      }
+      // Changing the color of strong elements
+      for (let left of strongElements) {
+        left.style.color = "white";
       }
       }
-      else{
-      darkBody.style.backgroundColor = "white";
-      darkMain.style.backgroundColor = "white";
+    else{
+      body.style.backgroundColor = "white";
+      main.style.backgroundColor = "white";
       heading[0].style.color = "black";
       sec2Sub[0].style.color = "hsl(228, 12%, 44%)";
-      switchedDark.style.backgroundColor = "hsl(230, 22%, 74%)";
+      headerBg[0].style.backgroundColor = "hsl(225, 100%, 98%)";
       for ( let i=0;i<4;i++) {
-        var secBack = document.getElementById("sec1-div"+i);
+        const secBack = document.getElementById("sec1-div"+i);
         secBack.style.backgroundColor = "hsl(227, 47%, 96%)";
         followersNumbers[i].style.color = "black";
       }
       for ( let i=0;i<8;i++) {
-        var secBack = document.getElementById("sec2-div"+i);
+        const secBack = document.getElementById("sec2-div"+i);
         secBack.style.backgroundColor = "hsl(227, 47%, 96%)";
-        boottomLeft[i].style.color = "black";
+      }
+      // Changing the color of strong elements
+      for (let left of strongElements) {
+        left.style.color = "black";
       }
     };
   };
