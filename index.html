@@ -163,7 +163,6 @@
     const body = document.getElementById("body");
     const main = document.getElementById("main");
     const switchedToDark = document.getElementById("theme-changer");
-    const followersNumbers = document.getElementsByClassName("followers-numbers");
     const strongElements = document.getElementsByTagName("strong");
     const heading = document.getElementsByClassName("heading");
     const sec2Sub = document.getElementsByClassName("sec2-subhead");
@@ -174,19 +173,19 @@
       main.style.backgroundColor = "hsl(230, 17%, 14%)";
       heading[0].style.color = "white";
       sec2Sub[0].style.color = "white";
+      console.log(headerBg[0]);
       headerBg[0].style.backgroundColor = "hsl(232, 19%, 15%)";
       for (let i = 0; i < 4; i++) {
         const secBack = document.getElementById("sec1-div"+i);
         secBack.style.backgroundColor = "hsl(228, 28%, 20%)"; 
-        followersNumbers[i].style.color = "white";
       }
       for (let i = 0; i < 8; i++) {
         const secBack = document.getElementById("sec2-div"+i);
         secBack.style.backgroundColor = "hsl(228, 28%, 20%)"; 
       }
       // Changing the color of strong elements
-      for (let left of strongElements) {
-        left.style.color = "white";
+      for (let element of strongElements) {
+        element.style.color = "white";
       }
       }
     else{
@@ -198,15 +197,14 @@
       for ( let i=0;i<4;i++) {
         const secBack = document.getElementById("sec1-div"+i);
         secBack.style.backgroundColor = "hsl(227, 47%, 96%)";
-        followersNumbers[i].style.color = "black";
       }
       for ( let i=0;i<8;i++) {
         const secBack = document.getElementById("sec2-div"+i);
         secBack.style.backgroundColor = "hsl(227, 47%, 96%)";
       }
       // Changing the color of strong elements
-      for (let left of strongElements) {
-        left.style.color = "black";
+      for (let element of strongElements) {
+        element.style.color = "black";
       }
     };
   };

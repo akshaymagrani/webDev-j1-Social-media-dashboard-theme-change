@@ -101,6 +101,8 @@ main{
         margin: auto;
         max-width: 300px;
         min-width: 300px;
+        position: relative;
+        z-index: 1;
     }
     h1{
         margin: 0;
@@ -115,7 +117,7 @@ main{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 0;
     border-bottom-left-radius: 2em;
     border-bottom-right-radius: 2em;
 }
@@ -291,7 +293,7 @@ input:checked+.slider:before {
 }
 @media (min-width: 726px) {
     .container{
-        max-width: 1022px;
+        max-width: 1084px;
         justify-content: center;
     }
 }
