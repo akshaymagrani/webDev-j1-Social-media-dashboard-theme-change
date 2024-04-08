@@ -1,0 +1,264 @@
+/* Primary */
+/* Dark Theme */
+/* Light Theme */
+/* Neutral */
+/* Dark Theme */
+/* Light Theme */
+.border-top-fb {
+  border-top: 5px solid hsl(195, 100%, 50%);
+}
+
+.border-top-tw {
+  border-top: 5px solid hsl(203, 89%, 53%);
+}
+
+.border-top-in {
+  position: absolute;
+  background: linear-gradient(to left, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  height: 5px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.border-top-yt {
+  border-top: 5px solid hsl(348, 97%, 39%);
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: hsl(228, 12%, 44%);
+}
+body body {
+  background-color: pink;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 756px;
+  margin: auto;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.card {
+  background-color: hsl(227, 47%, 96%);
+  flex: 1;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 275px;
+  min-width: 165px;
+  position: relative;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: hsl(230, 22%, 74%);
+}
+
+.section1 {
+  position: relative;
+}
+.section1 .sec1-head {
+  margin: auto;
+  max-width: 300px;
+  min-width: 300px;
+}
+.section1 h1 {
+  margin: 0;
+  color: black;
+  font-size: 2em;
+}
+
+.header-bg {
+  background-color: hsl(225, 100%, 98%);
+  height: 25vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(228, 12%, 44%);
+  font-weight: bold;
+}
+.user span {
+  padding-left: 0.5em;
+}
+
+.up {
+  color: hsl(163, 72%, 41%);
+}
+
+.down {
+  color: hsl(356, 69%, 56%);
+}
+
+.up, .down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-1 {
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: auto;
+}
+
+.column-2 {
+  justify-content: space-between;
+  align-items: end;
+}
+
+.followers-numbers {
+  padding-top: 2em;
+}
+
+.attribution {
+  text-align: center;
+}
+
+.social-media .card .followers {
+  font-size: small;
+  padding-bottom: 1em;
+  letter-spacing: 3px;
+  font-weight: lighter;
+}
+.social-media .card strong {
+  font-weight: 700;
+  font-size: 3em;
+  color: black;
+}
+
+.overview .card {
+  display: flex;
+  min-height: 4.5em;
+}
+.overview strong {
+  font-weight: 700;
+  font-size: 2em;
+  color: black;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(230, 22%, 74%);
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  right: 4px;
+  bottom: 4px;
+  background-color: hsl(230, 22%, 98%);
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(-16px);
+  background-color: white;
+}
+input:checked + .slider:before body {
+  background-color: hsl(230, 17%, 14%);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@media (min-width: 455px) {
+  .section1 {
+    margin: auto;
+  }
+  .section1 .sec1-head {
+    margin: 1em;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .section1 .sec1-head .label {
+    gap: 1em;
+    align-items: center;
+  }
+  .section1 .invisible {
+    display: none;
+  }
+  .card {
+    max-width: 275px;
+  }
+}
+@media (min-width: 726px) {
+  .container {
+    max-width: 926px;
+  }
+}/*# sourceMappingURL=input.css.map */

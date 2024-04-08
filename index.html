@@ -6,107 +6,151 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Frontend Mentor | Social Media Dashboard</title>
   <!-- External font link-->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <link href="index.css" rel="stylesheet" type="text/css">
+  <link href="output.css" rel="stylesheet" type="text/css">
 </head>
 <body id="body">
   <main id="main">
     <!-- Section 1-->
+    <div class="header-bg"></div>
     <section class="section1">
-      <div class="background"></div>
-      <div class="sec1-head">
-        <h1 class="heading">Social Media Dashboard</h1>
-        <p class="sub-head">Total Followers: 23,004</p>
-        <hr class="invisible">
-        <div class="theme-switch">
-          <label for="theme-changer" class="dark-mode">Dark Mode</label>
-          <input type="checkbox" name="theme-changer" id="theme-changer" onclick="themeSwitchDark()">
+      <section class="social-media container flex-column">
+        <div class="sec1-head">
+          <div>
+            <h1 class="heading">Social Media Dashboard</h1>
+            <p class="sub-head">Total Followers: 23,004</p>
+          </div>
+          <hr class="invisible">
+          <label class="label">
+            <p class="theme">Dark Mode</p>
+            <div class="switch">
+              <input type="checkbox" id="theme-changer" onclick="themeSwitchDark()">
+              <span class="slider round"></span>
+            </div>
+          </label>
         </div>
-      </div>
-      
-      
-      <div class="sec1-div1" id="sec1-div0">
-        <p class="user"><img src="images/icon-facebook.svg" alt="facebook-icon" class="facebook-icon">@nathanf</p>
-        <p class="followers-numbers"><strong>1987</strong></p>
-        <p class="followers">Followers</p>
-        <p class="daily1"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow">12 Today</p>
-      </div>
-      <div class="sec1-div2" id="sec1-div1">
-        <p class="user"><img src="images/icon-twitter.svg" alt="twitter-icon" class="twitter-icon">@nathanf</p>
-        <p class="followers-numbers"><strong>1044</strong></p>
-        <p class="followers">Followers</p>
-        <p class="daily2"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow">99 Today</p>
-      </div>
-      <div class="sec1-div3" id="sec1-div2">
-        <p class="user"><img src="images/icon-instagram.svg" alt="insta-icon" class="insta-icon">@realnathanf</p>
-        <p class="followers-numbers"><strong>11k</strong></p>
-        <p class="followers">Followers</p>
-        <p class="daily3"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow">1099 Today</p>
-      </div>
-      <div class="sec1-div4" id="sec1-div3">
-        <p class="user"><img src="images/icon-youtube.svg" alt="youtube-icon" class="youtube-icon">Nathan F.</p>
-        <p class="followers-numbers"><strong>8239</strong></p>
-        <p class="followers">Subscribers</p>
-        <p class="daily4"><img src="images/icon-down.svg" alt="down-arrow" class="down-arrow">144 Today</p>
-      </div>
+        <div class="container">
+          <div class="sec1-div1 card border-top-fb" id="sec1-div0">
+            <p class="user"><img src="images/icon-facebook.svg" alt="facebook-icon" class="facebook-icon"><span>@nathanf</span></p>
+            <p class="followers-numbers"><strong>1987</strong></p>
+            <p class="followers">FOLLOWERS</p>
+            <p class="daily1 up"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow">12 Today</p>
+          </div>
+          <div class="sec1-div2 card border-top-tw" id="sec1-div1">
+            <p class="user"><img src="images/icon-twitter.svg" alt="twitter-icon" class="twitter-icon"><span>@nathanf</span></p>
+            <p class="followers-numbers"><strong>1044</strong></p>
+            <p class="followers">FOLLOWERS</p>
+            <p class="daily2 up"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow">99 Today</p>
+          </div>
+          <div class="sec1-div3 card" id="sec1-div2">
+            <div class="border-top-in"></div>
+            <p class="user"><img src="images/icon-instagram.svg" alt="insta-icon" class="insta-icon"><span>@realnathanf</span></p>
+            <p class="followers-numbers"><strong>11k</strong></p>
+            <p class="followers">FOLLOWERS</p>
+            <p class="daily3 up"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow">1099 Today</p>
+          </div>
+          <div class="sec1-div4 card border-top-yt" id="sec1-div3">
+            <p class="user"><img src="images/icon-youtube.svg" alt="youtube-icon" class="youtube-icon"><span>Nathan F.</span></p>
+            <p class="followers-numbers"><strong>8239</strong></p>
+            <p class="followers">SUBSCRIBERS</p>
+            <p class="daily4 down"><img src="images/icon-down.svg" alt="down-arrow" class="down-arrow">144 Today</p>
+          </div>
+        </div>
+      </section>
     </section>
 
     <!-- Section 1-->
     <section class="section2">
-      <div class="sec2-head">
-        <p class="sec2-subhead">Overview - Today</p>
-      </div>
-      <div class="sec2-div1" id="sec2-div0">
-        <p class="top-left">Page Views</p>
-        <p class="bottom-left"><strong>87</strong></p>
-        <img src="images/icon-facebook.svg" alt="facebook-icon" class="facebook-icon top-right">
-        <p class="bottom-right1"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow">3%</p>
-      </div>
-      <div class="sec2-div2" id="sec2-div1">
-        <p class="top-left">Likes</p>
-        <p class="bottom-left"><strong>52</strong></p>
-        <img src="images/icon-facebook.svg" alt="facebook-icon" class="facebook-icon top-right">
-        <p class="bottom-right2"><img src="images/icon-down.svg" alt="down-arrow" class="down-arrow">2%</p>
-      </div>
-      <div class="sec2-div3" id="sec2-div2">
-        <p class="top-left">Likes</p>
-        <p class="bottom-left"><strong>5462</strong></p>
-        <img src="images/icon-instagram.svg" alt="insta-icon" class="insta-icon top-right">
-        <p class="bottom-right3"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow">2257%</p>
-      </div>
-      <div class="sec2-div4" id="sec2-div3">
-        <p class="top-left">Profile Views</p>
-        <p class="bottom-left"><strong>52k</strong></p>
-        <img src="images/icon-instagram.svg" alt="insta-icon" class="insta-icon top-right">
-        <p class="bottom-right4"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow">1375%</p>
-      </div>
-      <div class="sec2-div5" id="sec2-div4">
-        <p class="top-left">Retweets</p>
-        <p class="bottom-left"><strong>117</strong></p>
-        <img src="images/icon-twitter.svg" alt="twitter-icon" class="twitter-icon top-right">
-        <p class="bottom-right5"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow">303%</p>
-      </div>
-      <div class="sec2-div6" id="sec2-div5">
-        <p class="top-left">Likes</p>
-        <p class="bottom-left"><strong>507</strong></p>
-        <img src="images/icon-twitter.svg" alt="twitter-icon" class="twitter-icon top-right">
-        <p class="bottom-right6"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow">553%</p>
-      </div>
-      <div class="sec2-div7" id="sec2-div6">
-        <p class="top-left">Likes</p>
-        <p class="bottom-left"><strong>107</strong></p>
-        <img src="images/icon-youtube.svg" alt="youtube-icon" class="youtube-icon top-right">
-        <p class="bottom-right7"><img src="images/icon-down.svg" alt="down-arrow" class="down-arrow">19%</p>
-      </div>
-      <div class="sec2-div8" id="sec2-div7">
-        <p class="top-left">Total Views</p>
-        <p class="bottom-left"><strong>1407</strong></p>
-        <img src="images/icon-youtube.svg" alt="youtube-icon" class="youtube-icon top-right">
-        <p class="bottom-right8"><img src="images/icon-down.svg" alt="down-arrow" class="down-arrow">12%</p>
-    </div>
+      <section class="overview container">
+        <div class="sec2-head">
+          <h2 class="sec2-subhead">Overview - Today</h2>
+        </div>
+        <section class="container">
+        <div class="sec2-div1 card" id="sec2-div0">
+          <div class="column column-1">
+            <p class="top-left">Page Views</p>
+            <p class="bottom-left"><strong>87</strong></p>
+          </div>
+          <div class="column column-2">
+            <img src="images/icon-facebook.svg" alt="facebook-icon" class="facebook-icon top-right">
+            <p class="bottom-right1 up"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow"><span>3%</span></p>
+          </div>
+        </div>
+        <div class="sec2-div2 card" id="sec2-div1">
+          <div class="column column-1">
+            <p class="top-left">Likes</p>
+            <p class="bottom-left"><strong>52</strong></p>
+          </div>
+          <div class="column column-2">
+            <img src="images/icon-facebook.svg" alt="facebook-icon" class="facebook-icon top-right">
+            <p class="bottom-right2 down"><img src="images/icon-down.svg" alt="down-arrow" class="down-arrow"><span>2%</span></p>
+          </div>
+        </div>
+        <div class="sec2-div3 card" id="sec2-div2">
+          <div class="column column-1">
+            <p class="top-left">Likes</p>
+            <p class="bottom-left"><strong>5462</strong></p>
+          </div>
+          <div class="column column-2">
+            <img src="images/icon-instagram.svg" alt="insta-icon" class="insta-icon top-right">
+            <p class="bottom-right3 up"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow"><span>2257%</span></p>
+          </div>
+        </div>
+        <div class="sec2-div4 card" id="sec2-div3">
+          <div class="column column-1">
+            <p class="top-left">Profile Views</p>
+            <p class="bottom-left"><strong>52k</strong></p>
+          </div>
+          <div class="column column-2">
+            <img src="images/icon-instagram.svg" alt="insta-icon" class="insta-icon top-right">
+            <p class="bottom-right4 up"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow"><span>1375%</span></p>
+          </div>
+        </div>
+        <div class="sec2-div5 card" id="sec2-div4">
+          <div class="column column-1">
+            <p class="top-left">Retweets</p>
+            <p class="bottom-left"><strong>117</strong></p>
+          </div>
+          <div class="column column-2">
+            <img src="images/icon-twitter.svg" alt="twitter-icon" class="twitter-icon top-right">
+            <p class="bottom-right5 up"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow"><span>303%</span></p>
+          </div>
+        </div>
+        <div class="sec2-div6 card" id="sec2-div5">
+          <div class="column column-1">
+            <p class="top-left">Likes</p>
+            <p class="bottom-left"><strong>507</strong></p>
+          </div>
+          <div class="column column-2">
+            <img src="images/icon-twitter.svg" alt="twitter-icon" class="twitter-icon top-right">
+            <p class="bottom-right6 up"><img src="images/icon-up.svg" alt="up-arrow" class="up-arrow"><span>553%</span></p>
+          </div>
+        </div>
+        <div class="sec2-div7 card" id="sec2-div6">
+          <div class="column column-1">
+            <p class="top-left">Likes</p>
+            <p class="bottom-left"><strong>107</strong></p>
+          </div>
+          <div class="column column-2">
+            <img src="images/icon-youtube.svg" alt="youtube-icon" class="youtube-icon top-right">
+            <p class="bottom-right7 down"><img src="images/icon-down.svg" alt="down-arrow" class="down-arrow"><span>19%</span></p>
+          </div>
+        </div>
+        <div class="sec2-div8 card" id="sec2-div7">
+          <div class="column column-1">
+            <p class="top-left">Total Views</p>
+            <p class="bottom-left"><strong>1407</strong></p>
+          </div>
+          <div class="column column-2">
+            <img src="images/icon-youtube.svg" alt="youtube-icon" class="youtube-icon top-right">
+            <p class="bottom-right8 down"><img src="images/icon-down.svg" alt="down-arrow" class="down-arrow"><span>12%</span></p>
+          </div>
+        </div>
+        </section>
+      </section>
     </section>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
@@ -116,45 +160,51 @@
 </body>
 <script>
   function themeSwitchDark() {
-    var darkBody = document.getElementById("body");
-    var darkMain = document.getElementById("main");
-    var switchedDark = document.getElementById("theme-changer");
-    var followersNumbers = document.getElementsByClassName("followers-numbers");
-    var boottomLeft = document.getElementsByClassName("bottom-left");
-    var heading = document.getElementsByClassName("heading");
-    var sec2Sub = document.getElementsByClassName("sec2-subhead");
-    if (switchedDark.checked === true) {
-      darkBody.style.backgroundColor = "hsl(230, 17%, 14%)";
-      darkMain.style.backgroundColor = "hsl(230, 17%, 14%)";
-      switchedDark.style.backgroundColor = "linear-gradient(90deg, hsl(210, 78%, 56%) , hsl(146, 68%, 55%))";
+    const body = document.getElementById("body");
+    const main = document.getElementById("main");
+    const switchedToDark = document.getElementById("theme-changer");
+    const strongElements = document.getElementsByTagName("strong");
+    const heading = document.getElementsByClassName("heading");
+    const sec2Sub = document.getElementsByClassName("sec2-subhead");
+    const headerBg = document.getElementsByClassName("header-bg");
+  
+    if (switchedToDark.checked === true) {
+      body.style.backgroundColor = "hsl(230, 17%, 14%)";
+      main.style.backgroundColor = "hsl(230, 17%, 14%)";
       heading[0].style.color = "white";
       sec2Sub[0].style.color = "white";
-      for ( let i=0;i<4;i++) {
-        var secBack = document.getElementById("sec1-div"+i);
+      console.log(headerBg[0]);
+      headerBg[0].style.backgroundColor = "hsl(232, 19%, 15%)";
+      for (let i = 0; i < 4; i++) {
+        const secBack = document.getElementById("sec1-div"+i);
         secBack.style.backgroundColor = "hsl(228, 28%, 20%)"; 
-        followersNumbers[i].style.color = "white";
       }
-      for ( let i=0;i<8;i++) {
-        var secBack = document.getElementById("sec2-div"+i);
+      for (let i = 0; i < 8; i++) {
+        const secBack = document.getElementById("sec2-div"+i);
         secBack.style.backgroundColor = "hsl(228, 28%, 20%)"; 
-        boottomLeft[i].style.color = "white";
+      }
+      // Changing the color of strong elements
+      for (let element of strongElements) {
+        element.style.color = "white";
       }
       }
-      else{
-      darkBody.style.backgroundColor = "white";
-      darkMain.style.backgroundColor = "white";
+    else{
+      body.style.backgroundColor = "white";
+      main.style.backgroundColor = "white";
       heading[0].style.color = "black";
       sec2Sub[0].style.color = "hsl(228, 12%, 44%)";
-      switchedDark.style.backgroundColor = "hsl(230, 22%, 74%)";
+      headerBg[0].style.backgroundColor = "hsl(225, 100%, 98%)";
       for ( let i=0;i<4;i++) {
-        var secBack = document.getElementById("sec1-div"+i);
+        const secBack = document.getElementById("sec1-div"+i);
         secBack.style.backgroundColor = "hsl(227, 47%, 96%)";
-        followersNumbers[i].style.color = "black";
       }
       for ( let i=0;i<8;i++) {
-        var secBack = document.getElementById("sec2-div"+i);
+        const secBack = document.getElementById("sec2-div"+i);
         secBack.style.backgroundColor = "hsl(227, 47%, 96%)";
-        boottomLeft[i].style.color = "black";
+      }
+      // Changing the color of strong elements
+      for (let element of strongElements) {
+        element.style.color = "black";
       }
     };
   };
