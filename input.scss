@@ -98,7 +98,7 @@ main{
 
 .section1{
     .sec1-head{
-        margin: auto;
+        margin: 1em auto 0;
         max-width: 300px;
         min-width: 300px;
         position: relative;
@@ -112,7 +112,7 @@ main{
 }
 .header-bg{
     background-color: $Top-L-BG-Pattern;
-    height: 25vh;
+    height: 40vh;
     width: 100vw;
     position: absolute;
     top: 0;
@@ -269,6 +269,9 @@ input:checked+.slider:before {
 @media (min-width: 510px) {
     .container{
         justify-content: start;
+    }
+    .header-bg{
+        height: 25vh;
     }
     .section1 {
         .sec1-head {
