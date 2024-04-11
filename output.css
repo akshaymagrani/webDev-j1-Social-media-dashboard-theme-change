@@ -233,7 +233,7 @@ input:checked + .slider:before {
   -webkit-transform: translateX(-16px);
   -ms-transform: translateX(-16px);
   transform: translateX(-16px);
-  background-color: white;
+  background-color: rgb(54, 56, 87);
 }
 
 /* Rounded sliders */
