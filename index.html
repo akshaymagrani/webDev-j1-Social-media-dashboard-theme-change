@@ -167,7 +167,8 @@
     const heading = document.getElementsByClassName("heading");
     const sec2Sub = document.getElementsByClassName("sec2-subhead");
     const headerBg = document.getElementsByClassName("header-bg");
-  
+    const cards = document.getElementsByClassName("card");
+
     if (switchedToDark.checked === true) {
       body.style.backgroundColor = "hsl(230, 17%, 14%)";
       main.style.backgroundColor = "hsl(230, 17%, 14%)";
@@ -186,6 +187,14 @@
       // Changing the color of strong elements
       for (let element of strongElements) {
         element.style.color = "white";
+      }
+      for (let card of cards){
+        card.addEventListener("mouseover", () => {
+          card.style.backgroundColor = "rgb(51,58,86)";
+        })
+        card.addEventListener("mouseout", () => {
+          card.style.backgroundColor = "rgb(37,43,67)";
+        })
       }
       }
     else{
