@@ -51,9 +51,19 @@ $font: 'Inter', sans-serif;
     border-top: 5px solid $YouTube;
 }
 
-$theme: light;
-p{
+p {
     margin: 0;
+}
+
+.dark-theme {
+    background-color: $Body-D-BG;
+    color: $White;
+}
+.dark-theme .card{
+    background-color: $Card-D-BG;
+}
+.dark-theme .card:hover{
+    background-color: rgb(51, 58, 86);
 }
 
 @mixin card{
@@ -68,6 +78,12 @@ p{
     display: flex;
 }
 
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 body{
     font-family: $font;
     margin: 0;
@@ -75,14 +91,13 @@ body{
     color: $Overview-Card-L-Light-Text;
 }
 main{
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    align-items: center;
+    
 }
 .container{
-    display: flex;
+    @include flex-center;
     flex-wrap: wrap;
-    justify-content: center;
 }
 .flex-column{
     flex-direction: column;
@@ -93,7 +108,7 @@ main{
     @include card;
 }
 .card:hover{
-    background-color: $Toggle;
+    background-color: hsl(227, 47%, 90%);
 }
 
 .section1{
@@ -106,7 +121,6 @@ main{
     }
     h1{
         margin: 0;
-        color: black;
         font-size: 2em;
     }
 }
@@ -276,6 +290,7 @@ input:checked+.slider:before {
     .section1 {
         .sec1-head {
             margin: 1em;
+            width: 100%;
             max-width: 100%;
             display: flex;
             justify-content: space-between;
