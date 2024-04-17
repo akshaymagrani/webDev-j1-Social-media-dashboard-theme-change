@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/desktop-design-step-1.jpg)
+![Screenshot for the Social media dashboard with theme switcher coding challenge on desktop](./images/Screenshot_desktop_light.png)
 
 ### Links
 
