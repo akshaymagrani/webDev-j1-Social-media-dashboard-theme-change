@@ -49,7 +49,7 @@ body {
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
-  color: hsl(228, 12%, 44%);
+  font-display: swap;
 }
 
 main {
@@ -57,6 +57,10 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.heading {
+  color: black;
 }
 
 .container {
@@ -123,11 +127,11 @@ main {
 }
 
 .up {
-  color: hsl(163, 72%, 41%);
+  color: #006400;
 }
 
 .down {
-  color: hsl(356, 69%, 56%);
+  color: #8B0000;
 }
 
 .up, .down {

@@ -1,6 +1,8 @@
 /* Primary */
-$Up: hsl(163, 72%, 41%);
-$Down: hsl(356, 69%, 56%);
+// $Up: hsl(163, 72%, 41%);
+$Up: #006400;
+// $Down: hsl(356, 69%, 56%);
+$Down: #8B0000;
 $Facebook: hsl(195, 100%, 50%);
 $Twitter: hsl(203, 89%, 53%);
 $Instagram: linear-gradient(to left, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
@@ -88,12 +90,14 @@ body{
     font-family: $font;
     margin: 0;
     padding: 0;
-    color: $Overview-Card-L-Light-Text;
+    font-display: swap;
 }
 main{
     @include flex-center;
     flex-direction: column;
-    
+}
+.heading{
+    color: black;
 }
 .container{
     @include flex-center;
