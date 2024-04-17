@@ -123,11 +123,11 @@ main {
 }
 
 .up {
-  color: hsl(163, 72%, 41%);
+  color: #006400;
 }
 
 .down {
-  color: hsl(356, 69%, 56%);
+  color: #8B0000;
 }
 
 .up, .down {
