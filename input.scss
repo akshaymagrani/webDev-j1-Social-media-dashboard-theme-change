@@ -96,9 +96,6 @@ main{
     @include flex-center;
     flex-direction: column;
 }
-.heading{
-    color: black;
-}
 .container{
     @include flex-center;
     flex-wrap: wrap;
@@ -179,7 +176,7 @@ main{
     align-items: end;
 }
 .followers-numbers{
-    padding-top: 2em;
+    padding-top: 1em;
 }
 
 .attribution{
@@ -301,6 +298,7 @@ input:checked+.slider:before {
             .label{
                 gap: 1em;
                 align-items: center;
+                margin-right: 1em;
             }
         }
         .invisible{
